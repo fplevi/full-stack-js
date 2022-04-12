@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário das Galáxias</title>
+    <style>
+        body {
+            background-color: rgb(211, 211, 211);
+        }
+
+        main {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            width: 680px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.192);
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Cadastro da Liga dos Astronautas</h1>
+        <hr>
+        <form action="">
+            <p>
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome">
+            </p>
+            <hr>
+            <p>
+                <label for="qemail">E-mail:</label>
+                <input type="email" name="qemail" id="qemail" placeholder="seuemail@mail.com.br">
+                <label for="qpassword">Password</label>
+                <input type="password" name="qpassword" id="qpassword" placeholder="*******">
+            </p>
+            <hr>
+            <p>
+                <label for="qnascimento">Data de nascimento:</label>
+                <input type="date" name="qnascimento" id="qnascimento">
+                <label for="qfoto">Foto:</label>
+                <input type="file" name="qfoto" id="qfoto">
+            </p>
+            <p>
+                <label for="qnacionalidade">Nacionalidade:</label>
+                <select name="qnacionalidade" id="qnacionalidade">
+                    <option value="russian">Russa</option>
+                    <option value="american">Americana</option>
+                    <option value="brazilian">Brasileira</option>
+                </select>
+                <label for="qgenero">Sexo: </label>
+                <label for="qfemme">F</label>
+                <input type="radio" name="qgenero" id="qfemme" checked>
+                <label for="qmasc">M</label>
+                <input type="radio" name="qgenero" id="qmasc">  
+            </p>
+            <p>
+                <hr>
+            </p>
+            <p title="Qualidades"> Suas principais qualidades</p>
+            <p>
+                <input type="checkbox" name="qqualidades" id="qq1">
+                <label for="qq1">Inteligente</label>
+                <input type="checkbox" name="qqualidades" id="qq2">
+                <label for="qq2">Relisiência</label>
+                <input type="checkbox" name="qqualidades" id="qq3">
+                <label for="qq3">Preparo físico</label>
+                <input type="checkbox" name="qqualidades" id="qq4">
+                <label for="qq4">Educação</label>
+            </p>
+            <hr>
+            <h3>Fale sobre você</h2>
+            <textarea name="qgostaria" id="qgostaria" cols="90" rows="10" placeholder="Por quer se tornar astronauta?"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="range" name="" id="">
+        </form>
+    </main>
+</body>
+</html>

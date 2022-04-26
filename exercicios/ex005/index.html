@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <title>Formulário do Google</title>
+</head>
+<body>
+<script>
+var anoNascimento = prompt('Por favor informe o ano de nascimento.');
+    while(anoNascimento >= 2022 || anoNascimento <= 1901) {
+        alert('Informe o ano corretamente!')
+        var anoNascimento = prompt('Por favor informe o ano de nascimento.');1
+    }
+var anoAtual  = prompt('Por favor informe o ano atual.')
+
+var idadeFinal = anoAtual - anoNascimento;
+
+console.log(idadeFinal)
+
+
+</script>
+</body>
+</html>
